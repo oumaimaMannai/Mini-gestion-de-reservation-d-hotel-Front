@@ -1,7 +1,7 @@
 .registerf{
-    margin-top: 5%;
-    width: 60%;
-    margin-left: 20%;
+    margin-top: 9.5%;
+    width: 50%;
+    margin-left: 22%;
 }
 
 .form-group{
@@ -10,6 +10,52 @@
 }
 
 .card{
-    border-radius: 15%;
-    box-shadow: 10px 5px 5px #7F7F7F;
+    border-radius: 5%;
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.2);
+  /*  box-shadow: 10px 5px 5px #7F7F7F; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.4);
+    
+}
+
+h1{
+    margin-left: 40%;
+    font-weight: bold;
+    color: rgba(34, 44, 140, 0.84); ;
+}
+
+.form-group{
+    width: 80%;
+    margin-left: 10%;
+}
+#lig{
+    background-color: hsl(252, 32%, 43%);
+    height: 0.00000000001in;
+    width: 65%;
+    border-radius: 100%;
+    margin-top: 20;
+    margin-left: 19%;
+}
+
+button{
+    width: 24%;
+    height: 33;
+    margin-left: 75%;
+    margin-top: 50;
+}
+
+#groupf{
+    margin-top: 60;
+}
+
+label{
+    color: #696969;
+}
+
+#footerf{
+    margin-top: 70;
+}
+
+.to_register{
+    margin-left: 80%;
 }

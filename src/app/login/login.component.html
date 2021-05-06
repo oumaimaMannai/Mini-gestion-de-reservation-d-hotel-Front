@@ -7,6 +7,10 @@
         #f="ngForm"
         novalidate
       >
+      <h1>Sign in</h1>
+      
+      <input id="lig">
+      <div id="groupf">
         <div class="form-group">
           <label for="username">Username</label>
           <input
@@ -16,6 +20,7 @@
             [(ngModel)]="form.username"
             required
             #username="ngModel"
+            placeholder="Username"
           />
           <div
             class="alert alert-danger"
@@ -35,6 +40,7 @@
             required
             minlength="6"
             #password="ngModel"
+            placeholder="******"
           />
           <div
             class="alert alert-danger"
@@ -62,11 +68,16 @@
             <!--Login failed: {{ errorMessage }} -->
           </div>
         </div>
-      </form>
-  
-      <div class="alert alert-success" *ngIf="isLoggedIn">
-        Logged in as {{ roles }}.
+        
       </div>
+        <div class="alert alert-success" *ngIf="isLoggedIn">
+          Logged in as {{ roles }}.
+        </div>
+    
+      
+      </form>
+    
+      
     </div>
   </div>
   

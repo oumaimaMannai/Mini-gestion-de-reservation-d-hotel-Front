@@ -1,6 +1,46 @@
-.carousel{
-    width: 126%;
-    margin-left: -13%;
-    margin-top: -20;
-    height: 500px;
+#imgf{
+    margin-left: -130;
+    top: 40px;
+    right: 0px;
+    width: 123%;
+    height: 490;
+}
+
+.groupp{
+    position: absolute;
+    margin-top: -120;
+    margin-left: -10;
+    width: 80%;
+    height: 80;
+    background-color: transparent;
+    background: rgba(0, 28, 168, 0.57);
+    border-radius: 3%;
+}
+
+.sgroupp{
+    margin: 13px 0px 6px 20px;
+}
+
+input{
+    width: 120%;
+    margin-left: -10%;
+    height: 28;
+    border-radius: 3%;
+    border-color: transparent;
+}
+
+.inp1{
+    margin-left: 4;
+}
+
+label{
+    margin-bottom: 0%;
+    color: white;
+    margin-left: -10;
+    font-size: 12;
+}
+
+button{
+    margin-top: 29%;
+    width: 120%;
 }

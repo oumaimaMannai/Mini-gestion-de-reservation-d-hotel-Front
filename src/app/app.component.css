@@ -4,6 +4,16 @@
 }
 
 nav{
-    box-shadow: 10px 5px 5px #7F7F7F;
-    background-color: #584a91;
+    box-shadow: 3px 2px 9px #7F7F7F;
+    background-color: transparent;
+    background: rgba(34, 44, 140, 0.84); 
+  /*  background-color: #584a91;  */
+    border-radius: 0%;
+    position: absolute;
+    width: 100%;
+}
+
+#navid{
+    height: 3;
+
 }
