@@ -1,0 +1,159 @@
+
+img
+{
+    border-radius: 10px 10px  10px 10px;
+    margin-left:-15;
+    margin-bottom: -15;
+}
+#ajouter{
+    margin-top: 60;
+    padding-top: 1;
+
+}
+h1{
+    margin-left: 25%;
+    font-weight: bold;
+    color: rgba(34, 44, 140, 0.84); ;
+}
+.main-content{
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0,0,0,.4);
+    margin: 5em auto;
+    display: flex;
+    
+}
+.company__info{
+    background-color: #606060;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.fa-android{
+    font-size:3em;
+
+}
+@media screen and (max-width: 640px) {
+    .main-content{width: 90%;}
+    .company__info{
+        display: none;
+    }
+    .login_form{
+        border-top-left-radius:20px;
+        border-bottom-left-radius:20px;
+    }
+}
+@media screen and (min-width: 642px) and (max-width:800px){
+    .main-content{width: 70%;}
+}
+.row > h2{
+    color:#606060;
+    margin-left: 100;
+}
+.login_form{
+    background-color: #fff;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    
+}
+form{
+    padding: 0 2em;
+}
+.form__input{
+    width: 450;
+    border:0px solid transparent;
+    border-radius: 0;
+    border-bottom: 1px solid #aaa;
+    padding: 1em .5em .5em;
+    padding-left: 2em;
+    outline:none;
+    margin:1.5em auto;
+    transition: all .5s ease;
+    margin-left: 80;
+}
+.form__input:focus{
+    border-bottom-color: #008080;
+    box-shadow: 0 0 5px rgba(0,80,80,.4); 
+    border-radius: 4px;
+}
+.btnSubmit{
+    transition: all .5s ease;
+    width: 50%;
+    border-radius: 30px;
+    color:white;
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    box-shadow: 10px 5px 5px #DCDCDC;
+    height: 40;
+    margin-left: 110;
+}
+
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px 10px  10px 10px;
+    width: 200;
+    border: 1px solid #606060;
+    
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #606060;
+    color: white;
+}
+
+.inputfile + label {
+    cursor: pointer; /* "hand" cursor */
+}
+.inputfile:focus + label {
+    outline: 1px dotted green;
+    outline: -webkit-focus-ring-color auto 5px;
+    
+}
+.mainf{
+    margin-top: 20;
+ 
+    
+}
+
+#tab
+{
+    height: 100;
+    overflow: auto;
+    margin-left: 50;
+    width: 1350;
+}
+
+.login_form {
+    border-radius: 5%;
+    margin-left: 18%;
+    width: 70%;
+    padding-left: 40;
+    min-height: 520px;
+    height: auto;
+}
+  
+.alert-danger{
+    margin-left: 20%;
+    margin-top: -3%;
+}

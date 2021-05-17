@@ -1,28 +1,36 @@
-<img src="assets/hotel2.jpg" alt="ME" id="imgf">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-<div class="groupp">
-        <div class="col-md-12 sgroupp">
-            <div class="col-md-4 " style="margin-right: 8; ">
-                <label style="margin-left: -28;">Destination</label>
-                <input  placeholder="Destination">
+
+
+<div class="container" style="margin-top: 80;">
+    <div class="col-sm-4" *ngFor="let hot of hotels">
+        <h1></h1>
+        <div class="cardcontainer">
+            <div class="photo" style="height: 200px;"> <img src="assets/{{hot.photo}}">
+                
             </div>
-            <div class="col-md-2 inp" style="margin-right: 4; margin-left: 14;">
-                <label>Arrival date</label>
-                <input type="date" placeholder="Arrival date">
+            <div class="content">
+                <p class="txt4">{{hot.name_hotel}} Hotel</p>
+                <p class="txt5"><span id="addr">address :</span><span id="addr1">{{hot.adresse}} <img src="assets/{{hot.nbEtoile}}.PNG" id="imgEtoil"></span> </p>
+                <p class="txt2"></p>
             </div>
-            <div class="col-md-2 inp" >
-                <label>Return date</label>
-                <input type="date" placeholder="Return date">
+            <div class="footer" style="top:30px; height: 100;">
+                <div class="row" style=" height: 90; overflow: auto;padding: 2;">
+                    <p>{{hot.description}}</p>
+                    <p class="txt3"><span class="comments"></span></p>
+                </div>
+                   
             </div>
-            <div class="col-md-2 inp1">
-                <label>Room</label>
-                <input placeholder="Room">
+            <div class="row" style="margin-top: 19; ">
+                <ul class="social-links list-inline" style=" margin-left: 34%;" >
+                    <li  class="list-inline-item " *ngIf="showAdminBoard"><button id="iconea" (click)="updateHotel(hot.id)" 
+                        mat-raised-button
+                        matTooltip="Update"
+                        aria-label="Button that displays a tooltip when focused or hovered over"
+                        class="btn btn-success btn-circle btn-lg " ><span  class="fa fa-pencil-square-o "></span></button></li>
+                     <li  class="list-inline-item" *ngIf="showAdminBoard"><button id="iconea" (click)="onCreate(hot.id)" class="btn btn-danger btn-circle btn-lg"><span  class="fa fa-trash " ></span></button></li>                 
+                 </ul>
             </div>
-            <div class="col-md-1">
-                <label> </label>
-                <button type="button" class="btn btn-warning">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
+        </div>
     </div>
 </div>

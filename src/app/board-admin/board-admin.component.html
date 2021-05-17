@@ -1,5 +1,72 @@
-<div class="container">
-    <header class="jumbotron">
-      <p>{{ content }}</p>
-    </header>
-  </div>
+
+
+<div class="raw" id="ajouter">
+<div class="container-fluid mainf">
+      
+      <div class="col-md-8 col-xs-12 col-sm-12 login_form ">
+          <div class="container-fluid">
+              <div class="row">
+                  <h2></h2>
+              </div>
+              <div class="row" style="margin-left: 65;">
+                  <h1>New Hotel</h1>
+              </div>
+              <div class="row">
+                  <form control="" class="form-group" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+                    
+                    <input type="hidden" name="photo" id="photo" class="form__input"  style="color: black" [(ngModel)]="hotel.photo" #photo="ngModel">
+                   
+                    <div class="row">
+                        <input type="text" name="name_hotel" id="name_hotel" class="form__input" placeholder="Hotel Name *" required [(ngModel)]="hotel.name_hotel" #name_hotel="ngModel">
+                    </div>
+                    <div class="row al">
+                        <div class="alert-danger" *ngIf="f.submitted">
+                            <div *ngIf="name_hotel.errors.required">Name is required</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="text" name="adresse" id="adresse" class="form__input" placeholder="Address *" required [(ngModel)]="hotel.adresse" #adresse="ngModel">
+                    </div>
+                    <div class="row al">
+                        <div class="alert-danger" *ngIf="f.submitted">
+                          <div *ngIf="adresse.errors.required">Address is required</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="number" name="nbEtoile" id="nbEtoile" class="form__input" placeholder="Stars *" required [(ngModel)]="hotel.nbEtoile" #nbEtoile="ngModel">
+                    </div>
+                    <div class="row al">
+                        <div class="alert-danger" *ngIf="f.submitted">
+                          <div *ngIf="nbEtoile.errors.required">Stars is required</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <textarea name="description" id="description" class="form__input" placeholder="Description *" required [(ngModel)]="hotel.description" #description="ngModel"></textarea>
+                    </div>
+
+                    <div class="row al">
+                        <div class="alert-danger" *ngIf="f.submitted">
+                          <div *ngIf="description.errors.required">Description is required</div>
+                        </div>
+                    </div>
+                 
+                     
+                      
+                      <div class="row" style="margin-left: 60; width:450; padding-bottom: 25;padding-top: 0;">
+                          <input type="submit" value="Add" class="btnSubmit btn-primary">
+                      </div>
+
+
+                  </form>
+              </div>
+              
+          </div>
+      </div>
+ 
+</div>
+<!-- Footer -->
+<div class="container-fluid text-center footer">
+  
+</div>
+</div>
+
